@@ -21,4 +21,7 @@ router.get('/getAllAdress', AddressController.getAllAddress);
 // Route pour les Clients:
 router.get('/getAllCustomer', customerController.getAllCustomer);
 
+router.get('/getTableDetails', itemController.getTableDetails);
+router.get('/getColDetail', itemController.getColDetail);
+
   export default router
