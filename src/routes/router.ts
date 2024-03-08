@@ -1,6 +1,7 @@
 import express from "express";
 
-import test from "../controllers/herokuDB/test";
+import itemController from "../controllers/herokuDB/itemController";
+import AddressController from "../controllers/herokuDB/adressController";
 
 const router = express.Router();
 
@@ -11,9 +12,9 @@ router.get('/', (req, res) => {
 
 
   // Route pour les Items:
-router.get('/getAllitem', test.getAllitem);
+router.get('/getAllitem', itemController.getAllitem);
 
 // Route pour les Adresses:
-router.get('/getAllAdress', test.getAllAdress);
+router.get('/getAllAdress', AddressController.getAllAddress);
 
   export default router
