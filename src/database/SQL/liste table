@@ -1,0 +1,1052 @@
+{
+	"command": "SELECT",
+	"rowCount": 319,
+	"oid": null,
+	"rows": [
+		{
+			"table_name": "CustomerAssociatedFiles"
+		},
+		{
+			"table_name": "CustomerCustomReport"
+		},
+		{
+			"table_name": "CorrectionReason"
+		},
+		{
+			"table_name": "Country"
+		},
+		{
+			"table_name": "CurrencyTable"
+		},
+		{
+			"table_name": "Customer"
+		},
+		{
+			"table_name": "CustomerAdvantage"
+		},
+		{
+			"table_name": "CustomerFamily"
+		},
+		{
+			"table_name": "CustomerFamilyCustomReport"
+		},
+		{
+			"table_name": "CustomerOptionsCustomReport"
+		},
+		{
+			"table_name": "CustomerProduct"
+		},
+		{
+			"table_name": "CustomerProductAssociatedFiles"
+		},
+		{
+			"table_name": "AccountingExchangeGroup"
+		},
+		{
+			"table_name": "AccountingExchangeGroupProcessDetail"
+		},
+		{
+			"table_name": "AccountingYear"
+		},
+		{
+			"table_name": "Activity"
+		},
+		{
+			"table_name": "ActivityAssociatedFiles"
+		},
+		{
+			"table_name": "Address"
+		},
+		{
+			"table_name": "AnalyticGrid"
+		},
+		{
+			"table_name": "AnalyticGridLine"
+		},
+		{
+			"table_name": "AnalyticPlan"
+		},
+		{
+			"table_name": "AnalyticPlanItem"
+		},
+		{
+			"table_name": "Bank"
+		},
+		{
+			"table_name": "BankRemittance"
+		},
+		{
+			"table_name": "CalcultatedDataModel"
+		},
+		{
+			"table_name": "CashMovement"
+		},
+		{
+			"table_name": "Civility"
+		},
+		{
+			"table_name": "ClassificationGroup"
+		},
+		{
+			"table_name": "Colleague"
+		},
+		{
+			"table_name": "ColleagueAssociatedFiles"
+		},
+		{
+			"table_name": "ColleagueCompetence"
+		},
+		{
+			"table_name": "ColleagueFamily"
+		},
+		{
+			"table_name": "ColleagueFunction"
+		},
+		{
+			"table_name": "ColleagueWebSynchronizationInfo"
+		},
+		{
+			"table_name": "CommissionScale"
+		},
+		{
+			"table_name": "CommissionScaleColleagueLine"
+		},
+		{
+			"table_name": "CommissionScaleSelectionLine"
+		},
+		{
+			"table_name": "CommissionScaleStageLine"
+		},
+		{
+			"table_name": "Competence"
+		},
+		{
+			"table_name": "ComplementaryAccount"
+		},
+		{
+			"table_name": "ComplementaryDiscount"
+		},
+		{
+			"table_name": "ConstructionSite"
+		},
+		{
+			"table_name": "ConstructionSiteAssociatedFiles"
+		},
+		{
+			"table_name": "ConstructionSiteReferenceDocument"
+		},
+		{
+			"table_name": "ConstructionSiteReferenceDocumentEx"
+		},
+		{
+			"table_name": "ConstructionSiteReferenceDocumentLine"
+		},
+		{
+			"table_name": "ConstructionSiteReferenceDocumentLineTrackingDispatch"
+		},
+		{
+			"table_name": "Contact"
+		},
+		{
+			"table_name": "ContactAssociatedFiles"
+		},
+		{
+			"table_name": "ContactEcommerceInfo"
+		},
+		{
+			"table_name": "CustomerProductFamily"
+		},
+		{
+			"table_name": "CustomerSubFamily"
+		},
+		{
+			"table_name": "CustomerSubscription"
+		},
+		{
+			"table_name": "CustomerWebSynchronizationInfo"
+		},
+		{
+			"table_name": "Deal"
+		},
+		{
+			"table_name": "DealAssociatedFiles"
+		},
+		{
+			"table_name": "DealColleague"
+		},
+		{
+			"table_name": "DealContact"
+		},
+		{
+			"table_name": "DealCustomer"
+		},
+		{
+			"table_name": "DealExtraCost"
+		},
+		{
+			"table_name": "DealItem"
+		},
+		{
+			"table_name": "DealPurchaseDocument"
+		},
+		{
+			"table_name": "DealPurchaseDocumentLine"
+		},
+		{
+			"table_name": "DealPurchaseDocumentLineCostDispatch"
+		},
+		{
+			"table_name": "DealPurchaseSettlement"
+		},
+		{
+			"table_name": "DealResourcesCost"
+		},
+		{
+			"table_name": "DealSaleDocument"
+		},
+		{
+			"table_name": "DealSaleDocumentLine"
+		},
+		{
+			"table_name": "DealSaleSettlement"
+		},
+		{
+			"table_name": "DealStockDocument"
+		},
+		{
+			"table_name": "DealStockDocumentLine"
+		},
+		{
+			"table_name": "DealSupplier"
+		},
+		{
+			"table_name": "Dependency"
+		},
+		{
+			"table_name": "Disbursement"
+		},
+		{
+			"table_name": "DiscountCoupon"
+		},
+		{
+			"table_name": "DiscountCouponBarCode"
+		},
+		{
+			"table_name": "DiscountCouponItem"
+		},
+		{
+			"table_name": "DocumentLineAssociation"
+		},
+		{
+			"table_name": "DocumentSerial"
+		},
+		{
+			"table_name": "EbpSysAlert"
+		},
+		{
+			"table_name": "EbpSysAsynchronousLog"
+		},
+		{
+			"table_name": "EbpSysAutoIncrement"
+		},
+		{
+			"table_name": "EbpSysAutoTreeCategory"
+		},
+		{
+			"table_name": "EbpSysCloudAccount"
+		},
+		{
+			"table_name": "EbpSysCloudAccountPublicationAssociation"
+		},
+		{
+			"table_name": "EbpSysCloudDocument"
+		},
+		{
+			"table_name": "EbpSysCloudPublication"
+		},
+		{
+			"table_name": "EbpSysCustomTreeCategory"
+		},
+		{
+			"table_name": "EbpSysDashboard"
+		},
+		{
+			"table_name": "EbpSysDashboardDefaultTemplate"
+		},
+		{
+			"table_name": "EbpSysDashboardPart"
+		},
+		{
+			"table_name": "EbpSysDashboardTemplate"
+		},
+		{
+			"table_name": "EbpSysDataHash"
+		},
+		{
+			"table_name": "EbpSysDefaultReport"
+		},
+		{
+			"table_name": "EbpSysDeletedRecord"
+		},
+		{
+			"table_name": "EbpSysExchangeApplication"
+		},
+		{
+			"table_name": "EbpSysExchangeLog"
+		},
+		{
+			"table_name": "EbpSysGenericImportSettings"
+		},
+		{
+			"table_name": "EbpSysLinkedExtension"
+		},
+		{
+			"table_name": "EbpSysLock"
+		},
+		{
+			"table_name": "EbpSysMachineInfo"
+		},
+		{
+			"table_name": "EbpSysNavBar"
+		},
+		{
+			"table_name": "EbpSysNavBarDefaultTemplate"
+		},
+		{
+			"table_name": "EbpSysNavBarTemplate"
+		},
+		{
+			"table_name": "EbpSysOptions"
+		},
+		{
+			"table_name": "EbpSysQueryTool"
+		},
+		{
+			"table_name": "EbpSysReport"
+		},
+		{
+			"table_name": "EbpSysReportSavedSettings"
+		},
+		{
+			"table_name": "EbpSysReportTagAssociation"
+		},
+		{
+			"table_name": "EbpSysRight"
+		},
+		{
+			"table_name": "EbpSysRightColumn"
+		},
+		{
+			"table_name": "EbpSysRightValue"
+		},
+		{
+			"table_name": "EbpSysSaveLog"
+		},
+		{
+			"table_name": "EbpSysSchemaInformation"
+		},
+		{
+			"table_name": "EbpSysSchemaSynchronizationLog"
+		},
+		{
+			"table_name": "EbpSysStatisticCustomFilter"
+		},
+		{
+			"table_name": "EbpSysSynchronizedVersion"
+		},
+		{
+			"table_name": "EbpSysTag"
+		},
+		{
+			"table_name": "EbpSysUser"
+		},
+		{
+			"table_name": "EbpSysUserConnection"
+		},
+		{
+			"table_name": "EbpSysUserFunction"
+		},
+		{
+			"table_name": "EbpSysUserGroup"
+		},
+		{
+			"table_name": "EbpSysUserGroupAssociation"
+		},
+		{
+			"table_name": "EbpSysUserMandatoryField"
+		},
+		{
+			"table_name": "EbpSysWebSynchronizationVersion"
+		},
+		{
+			"table_name": "EbpSysWinForm"
+		},
+		{
+			"table_name": "EbpSysWinGrid"
+		},
+		{
+			"table_name": "EbpSysWinGridDefaultTemplate"
+		},
+		{
+			"table_name": "EbpSysWinGridTemplate"
+		},
+		{
+			"table_name": "EbpSysWinLayout"
+		},
+		{
+			"table_name": "EbpSysWinLayoutDefaultTemplate"
+		},
+		{
+			"table_name": "EbpSysWinLayoutTemplate"
+		},
+		{
+			"table_name": "EbpSysWinList"
+		},
+		{
+			"table_name": "EbpSysWinListTemplate"
+		},
+		{
+			"table_name": "EbpSysWinListView"
+		},
+		{
+			"table_name": "EbpSysWorkflow"
+		},
+		{
+			"table_name": "EbpSysWorkflowDefaultTemplate"
+		},
+		{
+			"table_name": "EbpSysWorkflowTemplate"
+		},
+		{
+			"table_name": "EconomicReason"
+		},
+		{
+			"table_name": "Ecotax"
+		},
+		{
+			"table_name": "EcotaxCalculationBase"
+		},
+		{
+			"table_name": "EcotaxFurniture"
+		},
+		{
+			"table_name": "Equipment"
+		},
+		{
+			"table_name": "EquipmentFamily"
+		},
+		{
+			"table_name": "EquipmentType"
+		},
+		{
+			"table_name": "EventLog"
+		},
+		{
+			"table_name": "ExecutionQuoteLineExtraFeeDistribution"
+		},
+		{
+			"table_name": "ExecutionQuoteTimeUnit"
+		},
+		{
+			"table_name": "Expense"
+		},
+		{
+			"table_name": "GeographicSector"
+		},
+		{
+			"table_name": "GiftVoucher"
+		},
+		{
+			"table_name": "GuaranteeType"
+		},
+		{
+			"table_name": "Incident"
+		},
+		{
+			"table_name": "IncidentAssociatedFiles"
+		},
+		{
+			"table_name": "IncidentCustomerProduct"
+		},
+		{
+			"table_name": "IncidentExtraCost"
+		},
+		{
+			"table_name": "IncidentPurchaseDocument"
+		},
+		{
+			"table_name": "IncidentStockDocument"
+		},
+		{
+			"table_name": "IncidentTemplate"
+		},
+		{
+			"table_name": "IncidentTemplateExtraCost"
+		},
+		{
+			"table_name": "Intrastat"
+		},
+		{
+			"table_name": "IntrastatIncoterm"
+		},
+		{
+			"table_name": "IntrastatLine"
+		},
+		{
+			"table_name": "IntrastatNc8Nomenclature"
+		},
+		{
+			"table_name": "IntrastatRegime"
+		},
+		{
+			"table_name": "IntrastatTransactionNature"
+		},
+		{
+			"table_name": "IntrastatTransportMode"
+		},
+		{
+			"table_name": "Item"
+		},
+		{
+			"table_name": "ItemAccount"
+		},
+		{
+			"table_name": "ItemAssociatedFiles"
+		},
+		{
+			"table_name": "ItemComponent"
+		},
+		{
+			"table_name": "ItemEcommerceInfo"
+		},
+		{
+			"table_name": "ItemFamily"
+		},
+		{
+			"table_name": "ItemFamilyAccount"
+		},
+		{
+			"table_name": "ItemSubFamily"
+		},
+		{
+			"table_name": "LinkedItem"
+		},
+		{
+			"table_name": "Location"
+		},
+		{
+			"table_name": "LoyaltyCalculationLine"
+		},
+		{
+			"table_name": "LoyaltyCardType"
+		},
+		{
+			"table_name": "LoyaltyHistory"
+		},
+		{
+			"table_name": "LoyaltyInclusionLine"
+		},
+		{
+			"table_name": "MailMergeTemplate"
+		},
+		{
+			"table_name": "MaintenanceContract"
+		},
+		{
+			"table_name": "MaintenanceContractAssociatedFiles"
+		},
+		{
+			"table_name": "MaintenanceContractCost"
+		},
+		{
+			"table_name": "MaintenanceContractCustomerProduct"
+		},
+		{
+			"table_name": "MaintenanceContractFamily"
+		},
+		{
+			"table_name": "MaintenanceContractInvoiceContentLine"
+		},
+		{
+			"table_name": "MaintenanceContractPurchaseDocument"
+		},
+		{
+			"table_name": "MaintenanceContractStockDocument"
+		},
+		{
+			"table_name": "MaintenanceContractTemplate"
+		},
+		{
+			"table_name": "ModificationLog"
+		},
+		{
+			"table_name": "Naf"
+		},
+		{
+			"table_name": "OlapCustomDatabase"
+		},
+		{
+			"table_name": "OlapFavoriteTemplate"
+		},
+		{
+			"table_name": "OlapTemplateTable"
+		},
+		{
+			"table_name": "OptionsCopiedInDocumentSchemaTable"
+		},
+		{
+			"table_name": "Organization"
+		},
+		{
+			"table_name": "PaymentType"
+		},
+		{
+			"table_name": "PayrollExchangeGroup"
+		},
+		{
+			"table_name": "PayrollExchangeGroupProcessDetail"
+		},
+		{
+			"table_name": "PeriodicInvoicing"
+		},
+		{
+			"table_name": "PeriodicInvoicingCustomer"
+		},
+		{
+			"table_name": "PosSafe"
+		},
+		{
+			"table_name": "PosTerminal"
+		},
+		{
+			"table_name": "PosTerminalOpenClose"
+		},
+		{
+			"table_name": "PosTerminalOpenCloseColleagueDetail"
+		},
+		{
+			"table_name": "PosTerminalOpenCloseItemFamilyDetail"
+		},
+		{
+			"table_name": "PosTerminalOpenClosePaymentTypeDetail"
+		},
+		{
+			"table_name": "PosTerminalOpenCloseSaleInAccountPaymentTypeDetail"
+		},
+		{
+			"table_name": "PosTerminalOpenCloseVatDetail"
+		},
+		{
+			"table_name": "PriceList"
+		},
+		{
+			"table_name": "PriceListCalculationLine"
+		},
+		{
+			"table_name": "PriceListCategory"
+		},
+		{
+			"table_name": "PriceListInclusionLine"
+		},
+		{
+			"table_name": "PurchaseCommitment"
+		},
+		{
+			"table_name": "PurchaseDisbursementStudySchemaTable"
+		},
+		{
+			"table_name": "PurchaseDocument"
+		},
+		{
+			"table_name": "PurchaseDocumentAssociatedFiles"
+		},
+		{
+			"table_name": "PurchaseDocumentComplementaryDiscount"
+		},
+		{
+			"table_name": "PurchaseDocumentEx"
+		},
+		{
+			"table_name": "PurchaseDocumentLine"
+		},
+		{
+			"table_name": "PurchaseDocumentLineAnalyticAffectation"
+		},
+		{
+			"table_name": "PurchaseDocumentLineTrackingDispatch"
+		},
+		{
+			"table_name": "PurchaseSettlement"
+		},
+		{
+			"table_name": "PurchaseSettlementCommitmentAssociation"
+		},
+		{
+			"table_name": "PurchaseStudyDetailLineSchemaTable"
+		},
+		{
+			"table_name": "RangeItem"
+		},
+		{
+			"table_name": "RangeItemAssociatedFiles"
+		},
+		{
+			"table_name": "RangeTemplate"
+		},
+		{
+			"table_name": "RangeTemplateElement"
+		},
+		{
+			"table_name": "RangeType"
+		},
+		{
+			"table_name": "RangeTypeElement"
+		},
+		{
+			"table_name": "Receipt"
+		},
+		{
+			"table_name": "RecoveredDocument"
+		},
+		{
+			"table_name": "RecoveredDocumentAssociatedFiles"
+		},
+		{
+			"table_name": "ReminderCommitment"
+		},
+		{
+			"table_name": "ReminderLetter"
+		},
+		{
+			"table_name": "Round"
+		},
+		{
+			"table_name": "SE_ART_FID_TYPE"
+		},
+		{
+			"table_name": "SE_CALC_DTE_NX_LIV"
+		},
+		{
+			"table_name": "SE_CLIENT"
+		},
+		{
+			"table_name": "SE_CLIENT_CUMUL_EBP"
+		},
+		{
+			"table_name": "SE_CLIENT_CUMUL_FID"
+		},
+		{
+			"table_name": "SE_CLIENT_FID"
+		},
+		{
+			"table_name": "SE_FACT_VALIDE"
+		},
+		{
+			"table_name": "SE_FID_PARAM"
+		},
+		{
+			"table_name": "SE_HISTO_CLIENT"
+		},
+		{
+			"table_name": "SE_USER"
+		},
+		{
+			"table_name": "SaleCommitment"
+		},
+		{
+			"table_name": "SaleDocument"
+		},
+		{
+			"table_name": "SaleDocumentAssociatedFiles"
+		},
+		{
+			"table_name": "SaleDocumentComplementaryDiscount"
+		},
+		{
+			"table_name": "SaleDocumentEx"
+		},
+		{
+			"table_name": "SaleDocumentLine"
+		},
+		{
+			"table_name": "SaleDocumentLineAnalyticAffectation"
+		},
+		{
+			"table_name": "SaleDocumentLineHumanServiceDetail"
+		},
+		{
+			"table_name": "SaleDocumentLineTrackingDispatch"
+		},
+		{
+			"table_name": "SaleInvoiceWebSynchronizationInfo"
+		},
+		{
+			"table_name": "SaleOrderEcommerceInfo"
+		},
+		{
+			"table_name": "SaleQuoteWebSynchronizationInfo"
+		},
+		{
+			"table_name": "SaleSettlement"
+		},
+		{
+			"table_name": "SaleSettlementCommitmentAssociation"
+		},
+		{
+			"table_name": "ScheduleEvent"
+		},
+		{
+			"table_name": "ScheduleEventAssociatedFiles"
+		},
+		{
+			"table_name": "ScheduleEventCustomerProduct"
+		},
+		{
+			"table_name": "ScheduleEventExpectedResource"
+		},
+		{
+			"table_name": "ScheduleEventOutlookSynchronization"
+		},
+		{
+			"table_name": "ScheduleEventTemplate"
+		},
+		{
+			"table_name": "ScheduleEventTemplateExpectedResource"
+		},
+		{
+			"table_name": "ScheduleEventTemplateResource"
+		},
+		{
+			"table_name": "ScheduleEventType"
+		},
+		{
+			"table_name": "ScheduleEventTypeResource"
+		},
+		{
+			"table_name": "ServiceIntrastat"
+		},
+		{
+			"table_name": "ServiceIntrastatLine"
+		},
+		{
+			"table_name": "SettlementMode"
+		},
+		{
+			"table_name": "SettlementModeLine"
+		},
+		{
+			"table_name": "Shipping"
+		},
+		{
+			"table_name": "ShippingAccount"
+		},
+		{
+			"table_name": "ShippingLevel"
+		},
+		{
+			"table_name": "StandardText"
+		},
+		{
+			"table_name": "States"
+		},
+		{
+			"table_name": "StatisticView"
+		},
+		{
+			"table_name": "StockDocument"
+		},
+		{
+			"table_name": "StockDocumentAssociatedFiles"
+		},
+		{
+			"table_name": "StockDocumentLine"
+		},
+		{
+			"table_name": "StockDocumentLineTrackingDispatch"
+		},
+		{
+			"table_name": "StockItem"
+		},
+		{
+			"table_name": "StockMovement"
+		},
+		{
+			"table_name": "StockRangeItem"
+		},
+		{
+			"table_name": "Storehouse"
+		},
+		{
+			"table_name": "SubTax"
+		},
+		{
+			"table_name": "SubTaxTerritoriality"
+		},
+		{
+			"table_name": "Supplier"
+		},
+		{
+			"table_name": "SupplierAssociatedFiles"
+		},
+		{
+			"table_name": "SupplierCustomReport"
+		},
+		{
+			"table_name": "SupplierFamily"
+		},
+		{
+			"table_name": "SupplierFamilyCustomReport"
+		},
+		{
+			"table_name": "SupplierItem"
+		},
+		{
+			"table_name": "SupplierOptionsCustomReport"
+		},
+		{
+			"table_name": "SupplierPurchaseConditionsSchemaTable"
+		},
+		{
+			"table_name": "SupplierSubFamily"
+		},
+		{
+			"table_name": "Tax"
+		},
+		{
+			"table_name": "TaxItem"
+		},
+		{
+			"table_name": "TaxTerritoriality"
+		},
+		{
+			"table_name": "ThirdBankAccountDetail"
+		},
+		{
+			"table_name": "ThirdReference"
+		},
+		{
+			"table_name": "TrackingStockItem"
+		},
+		{
+			"table_name": "TravelExpense"
+		},
+		{
+			"table_name": "Unit"
+		},
+		{
+			"table_name": "UnitWebSynchronizationInfo"
+		},
+		{
+			"table_name": "UnpaidSaleSettlementLine"
+		},
+		{
+			"table_name": "UnpaidSettlementReason"
+		},
+		{
+			"table_name": "Vat"
+		},
+		{
+			"table_name": "WinRangePivotGrid"
+		},
+		{
+			"table_name": "WinRangePivotGridDefaultTemplate"
+		},
+		{
+			"table_name": "WinRangePivotGridTemplate"
+		},
+		{
+			"table_name": "Zipcode"
+		},
+		{
+			"table_name": "sysdiagrams"
+		}
+	],
+	"fields": [
+		{
+			"name": "table_name",
+			"tableID": 14364,
+			"columnID": 3,
+			"dataTypeID": 19,
+			"dataTypeSize": 64,
+			"dataTypeModifier": -1,
+			"format": "text"
+		}
+	],
+	"_parsers": [
+		null
+	],
+	"_types": {
+		"_types": {
+			"arrayParser": {},
+			"builtins": {
+				"BOOL": 16,
+				"BYTEA": 17,
+				"CHAR": 18,
+				"INT8": 20,
+				"INT2": 21,
+				"INT4": 23,
+				"REGPROC": 24,
+				"TEXT": 25,
+				"OID": 26,
+				"TID": 27,
+				"XID": 28,
+				"CID": 29,
+				"JSON": 114,
+				"XML": 142,
+				"PG_NODE_TREE": 194,
+				"SMGR": 210,
+				"PATH": 602,
+				"POLYGON": 604,
+				"CIDR": 650,
+				"FLOAT4": 700,
+				"FLOAT8": 701,
+				"ABSTIME": 702,
+				"RELTIME": 703,
+				"TINTERVAL": 704,
+				"CIRCLE": 718,
+				"MACADDR8": 774,
+				"MONEY": 790,
+				"MACADDR": 829,
+				"INET": 869,
+				"ACLITEM": 1033,
+				"BPCHAR": 1042,
+				"VARCHAR": 1043,
+				"DATE": 1082,
+				"TIME": 1083,
+				"TIMESTAMP": 1114,
+				"TIMESTAMPTZ": 1184,
+				"INTERVAL": 1186,
+				"TIMETZ": 1266,
+				"BIT": 1560,
+				"VARBIT": 1562,
+				"NUMERIC": 1700,
+				"REFCURSOR": 1790,
+				"REGPROCEDURE": 2202,
+				"REGOPER": 2203,
+				"REGOPERATOR": 2204,
+				"REGCLASS": 2205,
+				"REGTYPE": 2206,
+				"UUID": 2950,
+				"TXID_SNAPSHOT": 2970,
+				"PG_LSN": 3220,
+				"PG_NDISTINCT": 3361,
+				"PG_DEPENDENCIES": 3402,
+				"TSVECTOR": 3614,
+				"TSQUERY": 3615,
+				"GTSVECTOR": 3642,
+				"REGCONFIG": 3734,
+				"REGDICTIONARY": 3769,
+				"JSONB": 3802,
+				"REGNAMESPACE": 4089,
+				"REGROLE": 4096
+			}
+		},
+		"text": {},
+		"binary": {}
+	},
+	"RowCtor": null,
+	"rowAsArray": false,
+	"_prebuiltEmptyResultObject": {
+		"table_name": null
+	}
+}

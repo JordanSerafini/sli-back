@@ -4,8 +4,8 @@ const test = {
     async getAllitem(req: any, res: any) {
         try {
     
-          const query= "SELECT * FROM item ORDER BY id ASC;";
-          const tables = await client.query(query);
+            const query = "SELECT * FROM \"Item\";";
+            const tables = await client.query(query);
   
           res.send(tables);
   
