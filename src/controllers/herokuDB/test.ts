@@ -1,11 +1,11 @@
-import { pool } from '../../database/client-pool/herokuBDD';
+import client  from '../../database/client-pool/herokuBDD';
 
 const test = {
     async getAllitem(req: any, res: any) {
         try {
     
           const query= "SELECT * FROM item ORDER BY id ASC;";
-          const tables = await pool.query(query);
+          const tables = await client.query(query);
   
           res.send(tables);
   
