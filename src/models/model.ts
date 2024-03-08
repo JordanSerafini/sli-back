@@ -1,11 +1,11 @@
-import { pool } from '../database/client/pool';
+import { pgClient } from '../database/client-pool/clientPGlocal';
 
 class Model {
   constructor() {}
 
   protected static async query(sql: string, params: any[] = []): Promise<any> {
     try {
-      const { rows } = await pool.query(sql, params);
+      const { rows } = await pgClient.query(sql, params);
       return rows;
     } catch (err: unknown) { 
       if (err instanceof Error) {
@@ -19,7 +19,7 @@ class Model {
 
   protected static async get(sql: string, params: any[] = []): Promise<any> {
     try {
-      const { rows } = await pool.query(sql, params);
+      const { rows } = await pgClient.query(sql, params);
       return rows[0];
     } catch (err: unknown) {
       if (err instanceof Error) {
@@ -37,7 +37,7 @@ class Model {
 
   protected static async run(sql: string, params: any[] = []): Promise<void> {
     try {
-      await pool.query(sql, params);
+      await pgClient.query(sql, params);
       console.log(`Commande SQL exécutée avec succès`);
     } catch (err: unknown) {
       if (err instanceof Error) {
