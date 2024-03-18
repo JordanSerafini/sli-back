@@ -24,7 +24,7 @@ router.post('/login', authController.loginUser);
   // Route pour les Items:
 router.get('/getAllitem', itemController.getAllitem);
 router.post('/addItem', itemController.addItem);
-router.post('/updateItem', itemController.updateItem);
+router.post('/updateItemStock', itemController.updateItemStock);
 
 // Route pour les Adresses:
 router.get('/getAllAdress', AddressController.getAllAddress);
