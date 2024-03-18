@@ -52,7 +52,7 @@ const authController = {
     
             const token = jwt.sign({ email: userData.email, id: userData.id }, process.env.JWT_SECRET, { expiresIn: '24h' });
     
-            res.status(200).json({ message: 'Connexion réussie', token });
+            res.status(200).json({ message: 'Connexion réussie', token, userData });
         } catch (error) {
             console.error('Erreur lors de la connexion :', error);
             res.status(500).json({ error: 'Erreur lors de la connexion' });
