@@ -32,7 +32,7 @@ const itemController = {
   async updateItemStock(req: any, res: any) {
     try {
         const { caption, stock } = req.body;
-        //console.log(caption, stock);
+        console.log(caption, stock);
         const query = "UPDATE \"Item\" SET RealStock = $1 WHERE Caption = $2 RETURNING *;";
         const tables = await client.query(query, [stock, caption]);
   
