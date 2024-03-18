@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://sli-form.netlify.app", "https://sli-app.netlify.app"],
+  origin: ["http://localhost:5173", "https://sli-form.netlify.app", "https://sli-app.netlify.app", "https://sli-app-1.netlify.app"],
 };
 
 
