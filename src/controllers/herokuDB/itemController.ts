@@ -31,7 +31,7 @@ const itemController = {
 
   async updateItem(req: any, res: any) {
     try {
-        const { id, nom, famille, fournisseur, prix, description, note, stock } = req.body;
+        const { nom, famille, fournisseur, prix, description, note, stock } = req.body;
 
         let query = "UPDATE \"Item\" SET ";
         const values = [];
@@ -71,8 +71,8 @@ const itemController = {
         query = query.slice(0, -1);
 
         // Ajoutez la condition WHERE pour l'ID
-        query += " WHERE Id=$" + index + " RETURNING *;";
-        values.push(id);
+        query += " WHERE Caption=$" + index + " RETURNING *;";
+        values.push(nom);
 
         const tables = await client.query(query, values);
   
