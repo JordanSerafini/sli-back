@@ -35,7 +35,8 @@ router.get('/getAllCustomer', customerController.getAllCustomer);
 
 // Route pour les Stock:
 router.get('/getAllStockDocs', stockController.getAllStockDocs);
-router.get('/getStockDocDetails/:id', stockController.getItemInStockDoc);
+router.get('/getStockDocDetails/:id', stockController.getStockDocDetailsById);
+router.get('/getAllDocumentLines', stockController.getAllDocumentLines);
 
 // Route pour la synchro:
 router.get('/synchroStockResa', synchroController.synchroStockResa);
