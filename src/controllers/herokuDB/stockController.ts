@@ -15,6 +15,25 @@ const stockController = {
         }
     },
 
+    async getItemInStockDoc(req: any, res: any) {
+      const { id } = req.params; 
+  
+      try {
+          const query = "SELECT * FROM \"StockDocumentLine\" WHERE DocumentId = $1 ;";
+          const result = await client.query(query, [id]);
+          const item = result.rows[0]; 
+  
+          if (!item) {
+              return res.status(404).send("Aucun élément trouvé avec cet ID.");
+          }
+  
+          res.send(item);
+      } catch (err) {
+          console.log(err);
+          res.status(500).send("Erreur lors de la récupération des données.");
+      }
+  }
+  
     
 };
 

@@ -6,6 +6,7 @@ import customerController from "../controllers/herokuDB/customerController";
 import diversController from "../controllers/herokuDB/diversController";
 import authController from "../controllers/auth/authController";
 import stockController from "../controllers/herokuDB/stockController";
+import synchroController from "../controllers/herokuDB/synchroController";
 
 const router = express.Router();
 
@@ -34,6 +35,9 @@ router.get('/getAllCustomer', customerController.getAllCustomer);
 
 // Route pour les Stock:
 router.get('/getAllStockDocs', stockController.getAllStockDocs);
+router.get('/getStockDocDetails/:id', stockController.getItemInStockDoc);
 
+// Route pour la synchro:
+router.get('/synchroStockResa', synchroController.synchroStockResa);
 
   export default router
