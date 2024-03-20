@@ -17,18 +17,19 @@ const customerController
     },
 
     async insertCoordinate(req: any, res: any) {
-      console.log(req.body);
-        try {
-            const { id, lat, lon } = req.body;
-            const query = `UPDATE "Customer" SET lat = ${lat}, lon = ${lon} WHERE id = ${id};`;
-            await client.query(query);
-            res.send("Coordonnées insérées avec succès");
-        } catch (err) {
-            console.log(err);
-            res.status(500).send("Erreur lors de l'insertion des coordonnées.");
-        }
-    }
 
+      try {
+        const { id, lon, lat } = req.body;
+        
+        const query = `UPDATE "Customer" SET lon = $1, lat = $2 WHERE id = $3;`;
+        const values = [lon, lat, id];
+        await client.query(query, values);
+        res.send("Coordonnées insérées avec succès");
+      } catch (err) {
+        console.log(err);
+        res.status(500).send("Erreur lors de l'insertion des coordonnées.");
+      }
+    }
     
 };
 
