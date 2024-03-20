@@ -5,7 +5,7 @@ const customerController
     async getAllCustomer(req: any, res: any) {
         try {
     
-            const query = "SELECT * FROM \"Customer\";";
+            const query = "SELECT * FROM \"Customer\" ORDER BY name ASC;";
             const tables = await client.query(query);
   
           res.send(tables);
