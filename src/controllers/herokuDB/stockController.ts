@@ -109,9 +109,15 @@ async addStockDoc(req: any, res: any) {
       console.log("Stock Document Line added successfully, ", result2.rows[0]);
 
       // --------------------------------------------------------- Mise à jour de la table Item pour le stock ---------------------------------------------------------
+      if (documentCode === "BE" || documentCode === "BR" ) {
       const updateQuery = "UPDATE \"Item\" SET realstock = realstock + $1 WHERE id = $2";
       await client.query(updateQuery, [quantity, id]);
       console.log("Item updated successfully");
+      } else if (documentCode === "BS" || documentCode === "BL" || documentCode === "BC" || documentCode === "BT" || documentCode === "BRT") {
+        const updateQuery = "UPDATE \"Item\" SET realstock = realstock - $1 WHERE id = $2";
+        await client.query(updateQuery, [quantity, id]);
+        console.log("Item updated successfully");
+      }
 
     }));
     res.send("Stock Document added successfully");
