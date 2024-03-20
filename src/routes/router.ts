@@ -32,6 +32,7 @@ router.get('/getAllAdress', AddressController.getAllAddress);
 
 // Route pour les Clients:
 router.get('/getAllCustomer', customerController.getAllCustomer);
+router.post('insertCoordinate', customerController.insertCoordinate);
 
 // Route pour les Stock:
 router.get('/getAllStockDocs', stockController.getAllStockDocs);

@@ -16,6 +16,18 @@ const customerController
         }
     },
 
+    async insertCoordinate(req: any, res: any) {
+        try {
+            const { id, lat, long } = req.body;
+            const query = `UPDATE "Customer" SET lat = ${lat}, long = ${long} WHERE id = ${id};`;
+            await client.query(query);
+            res.send("Coordonnées insérées avec succès");
+        } catch (err) {
+            console.log(err);
+            res.status(500).send("Erreur lors de l'insertion des coordonnées.");
+        }
+    }
+
     
 };
 
