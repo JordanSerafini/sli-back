@@ -1,4 +1,6 @@
 import client  from '../../database/client-pool/herokuBDD';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const stockController = {
     async getAllStockDocs(req: any, res: any) {
@@ -30,7 +32,7 @@ const stockController = {
 
   async getStockDocDetailsById(req: any, res: any) {
     const { id } = req.params; 
-    console.log(id);
+    //console.log(id);
     
     try {
         const query = "SELECT * FROM \"StockDocumentLine\" WHERE documentid = $1 ;";
@@ -39,7 +41,7 @@ const stockController = {
         if (result.rows.length === 0) {
             return res.status(404).send("Aucun élément trouvé avec cet ID.");
         }
-        console.log(result.rows.length);
+        //console.log(result.rows.length);
         res.send(result.rows);
     } catch (err) {
         console.log(err);
@@ -60,11 +62,69 @@ async getAllDepot (req: any, res: any) {
   }
 },
 
+async addStockDoc(req: any, res: any) {
+  const { storehouseid, documenttype, notesclear, reference, devisLine } = req.body;
+  const date = new Date();
+
+  let documentCode = "";
+  switch (documenttype) {
+    case "bon_sortie":
+      documentCode = "BS";
+      break;
+    case "bon_livraison":
+      documentCode = "BL";
+      break;
+    case "bon_commande":
+      documentCode = "BC";
+      break;
+    case "bon_reception":
+      documentCode = "BR";
+      break;
+    case "bon_transfert":
+      documentCode = "BT";
+      break;
+    case "bon_retour":
+      documentCode = "BRT";
+      break;
+    case "bon_entree":
+      documentCode = "BE";
+      break;
+    default:
+      documentCode = "Unknown";
+  }
+
+  const randomId: string = uuidv4();
+
+  const query = "INSERT INTO \"StockDocument\" (id, storehouseid, documentdate, reference, numberprefix, notesclear) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;";
+
+  try {
+    const result = await client.query(query, [randomId, storehouseid, date, reference, documentCode, notesclear]);
+    console.log("Stock Document added successfully, ");
+
+    // --------------------------------------------------------- Insérer les devislines ---------------------------------------------------------
+    await Promise.all(devisLine.map(async (line: any) => {
+      const { id, caption, quantity } = line;
+      const query2 = "INSERT INTO \"StockDocumentLine\" (documentid, descriptionclear, itemid, quantity) VALUES ($1, $2, $3, $4) RETURNING *;";
+      const result2 = await client.query(query2, [result.rows[0].id, caption, id, quantity]);
+      console.log("Stock Document Line added successfully, ", result2.rows[0]);
+
+      // --------------------------------------------------------- Mise à jour de la table Item pour le stock ---------------------------------------------------------
+      const updateQuery = "UPDATE \"Item\" SET realstock = realstock + $1 WHERE id = $2";
+      await client.query(updateQuery, [quantity, id]);
+      console.log("Item updated successfully");
+
+    }));
+    res.send("Stock Document added successfully");
+  } catch (error: any) {
+    console.error("Error adding Stock Document: ", error.message);
+    res.status(500).send("Internal Server Error");
+  }
+}
 
 
-  
-    
-};
 
+
+
+}
 export default stockController
-;
+
