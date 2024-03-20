@@ -17,9 +17,10 @@ const customerController
     },
 
     async insertCoordinate(req: any, res: any) {
+      console.log(req.body);
         try {
-            const { id, lat, long } = req.body;
-            const query = `UPDATE "Customer" SET lat = ${lat}, long = ${long} WHERE id = ${id};`;
+            const { id, lat, lon } = req.body;
+            const query = `UPDATE "Customer" SET lat = ${lat}, lon = ${lon} WHERE id = ${id};`;
             await client.query(query);
             res.send("Coordonnées insérées avec succès");
         } catch (err) {
