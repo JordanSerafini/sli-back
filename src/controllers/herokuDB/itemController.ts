@@ -4,7 +4,7 @@ const itemController = {
     async getAllitem(req: any, res: any) {
         try {
     
-            const query = "SELECT * FROM \"Item\" ORDER BY ASC;";
+            const query = "SELECT * FROM \"Item\" ORDER BY caption ASC;";
             const tables = await client.query(query);
   
           res.send(tables);
