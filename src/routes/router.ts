@@ -36,11 +36,16 @@ router.post('/insertCoordinate', customerController.insertCoordinate);
 
 // Route pour les Stock:
 router.get('/getAllStockDocs', stockController.getAllStockDocs);
-router.get('/getStockDocDetails/:id', stockController.getStockDocDetailsById);
+router.get('/getStoc kDocDetails/:id', stockController.getStockDocDetailsById);
+router.post('/addStockDoc', stockController.addStockDoc);
+
 router.get('/getAllDocumentLines', stockController.getAllDocumentLines);
+
+router.get('/StockAndLine', stockController.getStockDocAndLines);
+router.post('/StockAndLine', stockController.getStockDocWithLines);
+
 router.get('/getAllDepot', stockController.getAllDepot);
 
-router.post('/addStockDoc', stockController.addStockDoc);
 
 // Route pour la synchro:
 router.get('/synchroStockResa', synchroController.synchroStockResa);

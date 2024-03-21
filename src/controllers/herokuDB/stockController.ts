@@ -22,7 +22,7 @@ const stockController = {
           const query = "SELECT * FROM \"StockDocumentLine\";";
           const tables = await client.query(query);
   
-        res.send(tables);
+        res.send(tables.rows);
   
       } catch (err) {
         console.log(err);
@@ -125,7 +125,52 @@ async addStockDoc(req: any, res: any) {
     console.error("Error adding Stock Document: ", error.message);
     res.status(500).send("Internal Server Error");
   }
-}
+},
+
+async getStockDocAndLines(req: any, res: any){ // ? GET
+  try {
+    const query = `SELECT sd.*, sdl.*
+      FROM "StockDocument" sd
+      LEFT JOIN "StockDocumentLine" sdl ON sd.id = sdl.documentid`;
+    
+    const tables = await client.query(query);
+
+    res.send(tables.rows);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Erreur lors de la récupération des données.");
+  }
+},
+
+async getStockDocWithLines(req: any, res: any) { // ? POST
+  try {
+    const stockDocId = req.body.stockDocId; 
+
+    console.log("ID du document de stock: ", stockDocId);
+
+    const query = `
+      SELECT sd.*, sdl.*
+      FROM "StockDocument" sd
+      LEFT JOIN "StockDocumentLine" sdl ON sd.id = sdl.documentid
+      WHERE sd.id = $1`;
+
+    const result = await client.query(query, [stockDocId]);
+
+    if (result.rows.length > 0) {
+      res.send(result.rows);
+    } else {
+      res.status(404).send("Aucun document de stock trouvé pour cet ID.");
+    }
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Erreur lors de la récupération des données.");
+  }
+},
+
+
+
 
 
 
