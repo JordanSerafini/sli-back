@@ -45,6 +45,9 @@ router.get('/StockAndLine', stockController.getStockDocAndLines);
 router.post('/StockAndLine', stockController.getStockDocWithLines);
 router.get('/getDocLineWithPrice', stockController.getDocLineWithPrice);
 
+router.get('/getAllBEwithPrice', stockController.getAllBEwithPrice);
+router.get('/getAllBSwithPrice', stockController.getAllBSwithPrice);
+
 router.get('/getAllDepot', stockController.getAllDepot);
 
 

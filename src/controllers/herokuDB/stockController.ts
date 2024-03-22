@@ -207,5 +207,43 @@ const stockController = {
     }
   },
 
+  async getAllBEwithPrice (req: any, res: any) {
+    try {
+      const query = `
+      SELECT sd.id, sd.storehouseid, sd.numberprefix , sdl.documentid, sdl.quantity, sdl.itemid, sdl.descriptionclear  , i.salepricevatincluded
+      FROM "StockDocument" sd
+      LEFT JOIN "StockDocumentLine" sdl ON sd.id = sdl.documentid
+      LEFT JOIN "Item" i ON sdl.descriptionclear = i.caption
+      WHERE sd.numberprefix = 'BE'
+    `;
+
+      const tables = await client.query(query);
+
+      res.send(tables.rows);
+    } catch (err) {
+      console.error(err);
+      res.status(500).send("Erreur lors de la récupération des données.");
+    }
+  },
+
+  async getAllBSwithPrice (req: any, res: any) {
+    try {
+      const query = `
+      SELECT sd.id, sd.storehouseid, sd.numberprefix , sdl.documentid, sdl.quantity, sdl.itemid, sdl.descriptionclear  , i.salepricevatincluded
+      FROM "StockDocument" sd
+      LEFT JOIN "StockDocumentLine" sdl ON sd.id = sdl.documentid
+      LEFT JOIN "Item" i ON sdl.descriptionclear = i.caption
+      WHERE sd.numberprefix = 'BS'
+    `;
+
+      const tables = await client.query(query);
+
+      res.send(tables.rows);
+    } catch (err) {
+      console.error(err);
+      res.status(500).send("Erreur lors de la récupération des données.");
+    }
+  },
+
 };
 export default stockController;
