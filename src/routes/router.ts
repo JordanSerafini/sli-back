@@ -36,7 +36,7 @@ router.post('/insertCoordinate', customerController.insertCoordinate);
 
 // Route pour les Stock:
 router.get('/getAllStockDocs', stockController.getAllStockDocs);
-router.get('/getStoc kDocDetails/:id', stockController.getStockDocDetailsById);
+router.get('/getStockDocDetails/:id', stockController.getStockDocDetailsById);
 router.post('/addStockDoc', stockController.addStockDoc);
 
 router.get('/getAllDocumentLines', stockController.getAllDocumentLines);

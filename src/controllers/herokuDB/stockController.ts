@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 const stockController = {
+  
     async getAllStockDocs(req: any, res: any) {
         try {
     
