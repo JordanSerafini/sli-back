@@ -207,7 +207,7 @@ const stockController = {
     }
   },
 
-  async getAllBEwithPrice (req: any, res: any) {
+  async getAllBE (req: any, res: any) {
     try {
       const query = `
       SELECT sd.id, sd.storehouseid, sd.numberprefix , sdl.documentid, sdl.quantity, sdl.itemid, sdl.descriptionclear  , i.salepricevatincluded
@@ -226,7 +226,7 @@ const stockController = {
     }
   },
 
-  async getAllBSwithPrice (req: any, res: any) {
+  async getAllBS (req: any, res: any) {
     try {
       const query = `
       SELECT sd.id, sd.storehouseid, sd.numberprefix , sdl.documentid, sdl.quantity, sdl.itemid, sdl.descriptionclear  , i.salepricevatincluded
