@@ -103,7 +103,7 @@ const stockController = {
         documentCode,
         notesclear,
       ]);
-      console.log("Stock Document added successfully, ");
+      console.log("Stock Document added successfully, ", result.rows[0]);
 
       // --------------------------------------------------------- Insérer les devislines ---------------------------------------------------------
       await Promise.all(

@@ -7,6 +7,7 @@ import diversController from "../controllers/herokuDB/diversController";
 import authController from "../controllers/auth/authController";
 import stockController from "../controllers/herokuDB/stockController";
 import synchroController from "../controllers/herokuDB/synchroController";
+import coordinateController from "../controllers/herokuDB/coordinateController";
 
 const router = express.Router();
 
@@ -53,5 +54,6 @@ router.get('/getAllDepot', stockController.getAllDepot);
 
 // Route pour la synchro:
 router.get('/synchroStockResa', synchroController.synchroStockResa);
+router.get('/coordinateService', coordinateController.getCoordinate);
 
   export default router
