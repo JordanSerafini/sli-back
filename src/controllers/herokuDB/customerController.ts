@@ -33,5 +33,4 @@ const customerController
     
 };
 
-export default customerController
-;
+export default customerController;

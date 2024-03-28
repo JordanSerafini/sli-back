@@ -53,7 +53,6 @@ const authController = {
         }
     },
     
-
     loginUser: async (req: Request, res: Response) => {
         const { email, password } = req.body;
     
