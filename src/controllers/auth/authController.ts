@@ -82,6 +82,11 @@ const authController = {
             console.error('Erreur lors de la connexion :', error);
             res.status(500).json({ error: 'Erreur lors de la connexion' });
         }
+    },
+
+    logoutUser: async (req: Request, res: Response) => {
+        const { email } = req.body;
+        
     }
     
 
